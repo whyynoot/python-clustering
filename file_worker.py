@@ -11,6 +11,10 @@ class FileWorker(object):
             points = []
             for line in f:
                 points.append([int(line.split()[0]), int(line.split()[1])])
+
+            # This was a test what if there will be a lot of points and how it will cluster it
+            # U are able to uncomment this and see results
+
             # minimum = list(min(points, key = lambda t: t[1]))
             # maximum = list(max(points))
             # k = 100
